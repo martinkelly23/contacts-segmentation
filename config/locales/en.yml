@@ -63,6 +63,14 @@ en:
   password: "Password"
   password_confirmation: "Password confirmation"
   characters minimum: "characters minimum"
+  current password: "Current password"
 
   remember_me: "Remember me"
   Forgot your password?: "Forgot your password?"
+
+  blank if you do not want to change it: "blank if you do not want to change it"
+  we need your current password to confirm your changes: "We need your current password to confirm your changes"
+  update: "Update"
+  delete account: "Delete my account"
+  back: "Back"
+  Lenguage: "Lenguage"

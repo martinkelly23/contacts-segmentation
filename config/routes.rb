@@ -1,13 +1,21 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'home/front'
+  #devise_for :users
+  #get 'home/front'
   root to: 'home#front'
 
-  resources :users, only: [:index]
+  #resources :users, only: [:index]
 
-  resources :filters
+  #resources :filters
 
   post '/filter', to:'filters#filt'
+
+  scope '/(:locale)', defaults: { locale: 'en' }, constraints: { locale: /en|es|pt/ } do
+    resources :filters
+    resources :users, only: [:index]
+    devise_for :users
+    post '/filter', to:'filters#filt'
+    get 'home/front'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,76 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+pt:
+  hello: "Olá mundo"
+  Segmentation: "Segmentação"
+  Options: "Opções"
+  Contacts: "Contatos"
+  Saved criteria: "Critérios salvos"
+  Account: "Conta"
+  Edit Profile: "Editar perfil"
+  Sign out: "Sair"
+  Sign up: "Registar-se"
+  Sign in: "Inscreva-se"
+
+  Information: "Informação"
+  name: "nome"
+  email: "Email"
+  age: "idade"
+  state: "Estado"
+  job: "trabalho"
+  Operator: "Operador"
+  same as: "igual a"
+  contains: "contém"
+  begins with: "começa com"
+  ends with: "termina com"
+
+  Value: "Valor"
+
+  Logical operator: "Operador lógico"
+  Select one logical operator: "Selecione um operador lógico"
+  AND: "e"
+  OR: "O"
+  Search: "Pesquisar"
+
+  equal to: "igual a"
+  less than: "menos do que"
+  less than or equal to: "menor ou igual a"
+  greater than: "maior do que"
+  greater than or equal to: "maior ou igual a"
+
+  Contacts: "Contatos"
+
+  New user: "Novo usuário"
+  password: "Senha"
+  password_confirmation: "Confirmação da senha"
+  characters minimum: "caracteres mínimos"
+  current password: "Senha atual"
+
+  remember_me: "Lembre-se de mim"
+  Forgot your password?: "Esqueceu sua senha?"
+
+  blank if you do not want to change it: "em branco se você não quer mudar isso"
+  we need your current password to confirm your changes: "Precisamos de sua senha atual para confirmar suas mudanças"
+  update: "Atualizar"
+  delete account: "Deletar minha conta"
+  back: "Retorno"
+  Lenguage: "linguagem"

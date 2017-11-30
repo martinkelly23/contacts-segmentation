@@ -6,22 +6,22 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label t('name') %><br />
     <%= f.text_field :name, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :state %><br />
+    <%= f.label t('state') %><br />
     <%= f.text_field :state, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :job %><br />
+    <%= f.label t('job') %><br />
     <%= f.text_field :job, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :age %><br />
+    <%= f.label t('age') %><br />
     <%= f.number_field :age, autofocus: true %>
   </div>
 
@@ -30,34 +30,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :contraseña %> <i>(en blanco si no quieres cambiarla)</i><br />
+    <%= f.label t('password') %> <i><%=t('blank if you do not want to change it')%></i><br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> caracteres como mínimo</em>
+      <em><%= @minimum_password_length %> <%=t('characters minimum')%></em>
     <% end %>
   </div>
 
   <div class="field">
-    <%= f.label :confirmar_contraseña %><br />
+    <%= f.label t('password_confirmation') %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :contraseña_actual %> <i>(necesitamos tu contraseña actual para confirmar tus cambios)</i><br />
+    <%= f.label t('current password') %> <i><%=t('we need your current password to confirm your changes')%></i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Actualizar", class: 'btn btn-primary'%>
+    <%= f.submit t('update'), class: 'btn btn-primary'%>
   </div>
 <% end %>
 
-<h3>Cancelar mi cuenta</h3>
+<h3><%=t('delete account')%></h3>
 
-<p>Descontento? <%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "Estas seguro?" }, method: :delete %></p>
+<p><%= button_to t('delete account'), registration_path(resource_name), data: { confirm: "Estas seguro?" }, method: :delete %></p>
 
-<%= link_to "Atras", :back %>
+<%= link_to t('back'), :back %>
 
 </div>
 </div>
