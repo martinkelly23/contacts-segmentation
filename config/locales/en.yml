@@ -21,3 +21,48 @@
 
 en:
   hello: "Hello world"
+  Segmentation: "Segmentation"
+  Options: "Options"
+  Contacts: "Contacts"
+  Saved criteria: "Saved criteria"
+  Account: "Account"
+  Edit Profile: "Edit Profile"
+  Sign out: "Sign out"
+  Sign up: "Sign up"
+  Sign in: "Sign in"
+
+  Information: "Information"
+  name: "Name"
+  email: "Email"
+  age: "Age"
+  state: "State"
+  job: "Job"
+  Operator: "Operator"
+  same as: "same as"
+  contains: "contains"
+  begins with: "begins with"
+  ends with: "ends with"
+
+  Value: "Value"
+
+  Logical operator: "Logical operator"
+  Select one logical operator: "Select one logical operator"
+  AND: "AND"
+  OR: "OR"
+  Search: "Search"
+
+  equal to: "equal to"
+  less than: "less than"
+  less than or equal to: "less than or equal to"
+  greater than: "greater than"
+  greater than or equal to: "greater than or equal to"
+
+  Contacts: "Contacts"
+
+  New user: "New user"
+  password: "Password"
+  password_confirmation: "Password confirmation"
+  characters minimum: "characters minimum"
+
+  remember_me: "Remember me"
+  Forgot your password?: "Forgot your password?"

@@ -4,78 +4,78 @@
     <div class="row">
       <div class="col-6 col-md-4">
         <div class="form-group">
-          <label for="select1">Column</label>
+          <label for="select1"><%= t('Information')%></label>
           <select class="form-control" id="select1" name="select1">
-            <option value="name"> name </option>
-            <option value="email"> email </option>
-            <option value="age"> age </option>
-            <option value="state"> state </option>
-            <option value="job"> job </option>
+            <option value="name"> <%= t('name')%> </option>
+            <option value="email"> <%= t('email')%> </option>
+            <option value="age"> <%= t('age')%> </option>
+            <option value="state"> <%= t('state')%> </option>
+            <option value="job"> <%= t('job')%> </option>
           </select>
         </div>
         <div class="form-group">
-          <label for="select2">Operator</label>
+          <label for="select2"><%= t('Operator')%></label>
           <select class="form-control" id="select2" name="select2">
-            <option value="same as">same as</option>
-            <option value="contains">contains</option>
-            <option value="begins with">begins with</option>
-            <option value="ends with">ends with</option>
+            <option value="same as"><%= t('same as')%></option>
+            <option value="contains"><%= t('contains')%></option>
+            <option value="begins with"><%= t('begins with')%></option>
+            <option value="ends with"><%= t('ends with')%></option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input1">Value</label>
+          <label for="input1"><%= t('Value')%></label>
           <input type="text" class="form-control" id="input1" name="input1">
         </div>
       </div>
       <div class="col-6 col-md-4">
         <div class="form-group">
-          <label for="select3">Logical operator</label>
+          <label for="select3"><%= t('Logical operator')%></label>
           <select class="form-control" id="select3" name="select3">
-            <option selected>Select one logical operator</option>
-            <option value="AND"> AND </option>
-            <option value="OR"> OR </option>
+            <option selected><%= t('Select one logical operator')%></option>
+            <option value="AND"><%= t('AND')%> </option>
+            <option value="OR"><%= t('OR')%> </option>
           </select>
         </div>
       </div>
       <div class="col-6 col-md-4">
         <div class="form-group">
-          <label for="select4">Column</label>
+          <label for="select4"><%= t('Information')%></label>
           <select class="form-control" id="select4" name="select4" disabled = 'true'>
-            <option value="name"> name </option>
-            <option value="email"> email </option>
-            <option value="age"> age </option>
-            <option value="state"> state </option>
-            <option value="job"> job </option>
+            <option value="name"> <%= t('name')%> </option>
+            <option value="email"> <%= t('email')%> </option>
+            <option value="age"> <%= t('age')%> </option>
+            <option value="state"> <%= t('state')%> </option>
+            <option value="job"> <%= t('job')%> </option>
           </select>
         </div>
         <div class="form-group">
-          <label for="select5">Operator</label>
+          <label for="select5"><%= t('Operator')%></label>
           <select class="form-control" id="select5" name="select5" disabled = 'true'>
-            <option value="same as">same as</option>
-            <option value="contains">contains</option>
-            <option value="begins with">begins with</option>
-            <option value="ends with">ends with</option>
+            <option value="same as"><%= t('same as')%></option>
+            <option value="contains"><%= t('contains')%></option>
+            <option value="begins with"><%= t('begins with')%></option>
+            <option value="ends with"><%= t('ends with')%></option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input">Value</label>
+          <label for="input"><%= t('Value')%></label>
           <input type="text" class="form-control" id="input2" name="input2" disabled = 'true'>
         </div>
       </div>
     </div>
-    <input name="commit" type="submit" value="Search" />
+    <button type="submit" class="btn btn-primary"><%= t('Search')%></button>
   </form>
 
 
-  <h1>Contacts:</h1>
+  <h1><%= t('Contacts')%></h1>
   <table class= "table table-hover">
     <thead>
       <tr>
-        <th> Name </th>
-        <th> Email </th>
-        <th> Age </th>
-        <th> State </th>
-        <th> Job </th>
+        <th> <%= t('name')%> </th>
+        <th> <%= t('email')%> </th>
+        <th> <%= t('age')%> </th>
+        <th> <%= t('state')%> </th>
+        <th> <%= t('job')%> </th>
       </tr>
     </thead>
     <tbody>
@@ -101,21 +101,45 @@
   function operator() {
       if(document.getElementById("select1").selectedIndex == 2){
         $("#select2").empty();
-        $("#select2").append('<option>equal to</option>');
-        $("#select2").append('<option>less than</option>');
-        $("#select2").append('<option>less than or equal to</option>');
-        $("#select2").append('<option>greater than</option>');
-        $("#select2").append('<option>greater than or equal to</option>');
+        $("#select2").append('<option value="equal to"> <%= t('equal to')%></option>');
+        $("#select2").append('<option value="less than"><%= t('less than')%></option>');
+        $("#select2").append('<option value="less than or equal to"><%= t('less than or equal to')%></option>');
+        $("#select2").append('<option value="greater than"><%= t('greater than')%></option>');
+        $("#select2").append('<option value="greater than or equal to"><%= t('greater than or equal to')%></option>');
 
         document.getElementById('input1').type = 'number';
       }
       else{
         $("#select2").empty();
-        $("#select2").append('<option>same as</option>');
-        $("#select2").append('<option>contains</option>');
-        $("#select2").append('<option>begins with</option>');
-        $("#select2").append('<option>greater than</option>');
-        $("#select2").append('<option>ends with</option>');
+        $("#select2").append('<option value="same as"><%= t('same as')%></option>');
+        $("#select2").append('<option value="contains"><%= t('contains')%></option>');
+        $("#select2").append('<option value="begins with"><%= t('begins with')%></option>');
+        $("#select2").append('<option value="greater than"><%= t('greater than')%></option>');
+        $("#select2").append('<option value="ends with"><%= t('ends with')%></option>');
+
+        document.getElementById('input1').type = 'text';
+      }
+  }
+
+  document.getElementById("select4").onchange = function() {operator2()};
+  function operator2() {
+      if(document.getElementById("select4").selectedIndex == 2){
+        $("#select5").empty();
+        $("#select5").append('<option value="equal to"> <%= t('equal to')%></option>');
+        $("#select5").append('<option value="less than"><%= t('less than')%></option>');
+        $("#select5").append('<option value="less than or equal to"><%= t('less than or equal to')%></option>');
+        $("#select5").append('<option value="greater than"><%= t('greater than')%></option>');
+        $("#select5").append('<option value="greater than or equal to"><%= t('greater than or equal to')%></option>');
+
+        document.getElementById('input2').type = 'number';
+      }
+      else{
+        $("#select5").empty();
+        $("#select5").append('<option value="same as"><%= t('same as')%></option>');
+        $("#select5").append('<option value="contains"><%= t('contains')%></option>');
+        $("#select5").append('<option value="begins with"><%= t('begins with')%></option>');
+        $("#select5").append('<option value="greater than"><%= t('greater than')%></option>');
+        $("#select5").append('<option value="ends with"><%= t('ends with')%></option>');
 
         document.getElementById('input1').type = 'text';
       }
