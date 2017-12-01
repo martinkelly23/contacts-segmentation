@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 pt:
-  hello: "Olá mundo"
+  hello: "bem vinda"
   Segmentation: "Segmentação"
   Options: "Opções"
   Contacts: "Contatos"
@@ -74,3 +74,5 @@ pt:
   delete account: "Deletar minha conta"
   back: "Retorno"
   Lenguage: "linguagem"
+  Explanation: "Neste aplicativo, usamos o conceito chamado segmentação para obter certos contatos de uma lista e critérios predefinidos."
+  Explanation2: "Faça login com seu usuário ou registre-se para acessar as funcionalidades."

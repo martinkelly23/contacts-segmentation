@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Welcome!"
   Segmentation: "Segmentation"
   Options: "Options"
   Contacts: "Contacts"
@@ -74,3 +74,5 @@ en:
   delete account: "Delete my account"
   back: "Back"
   Lenguage: "Lenguage"
+  Explanation: "In this application we use the concept called segmentation to get certain contacts from a list and predefined criteria."
+  Explanation2: "Login with your user or register to access to the functionalities."

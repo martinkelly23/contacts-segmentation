@@ -1,8 +1,12 @@
 <div class="container">
   <!-- Jumbotron Header -->
   <header class="jumbotron my-4">
-    <h1 class="display-3">A Warm Welcome!</h1>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-    <a href="/users" class="btn btn-primary btn-lg">Call to action!</a>
+    <h1 class="display-3"> <%= t('hello')%> </h1>
+    <p class="lead"> <%= t('Explanation')%>  </p>
+    <% if user_signed_in? %>
+      <a href="/users" class="btn btn-primary btn-lg"><%= t('Segmentation')%>!</a>
+    <% else %>
+      <p class="lead"> <%= t('Explanation2')%>  </p>
+    <% end %>
   </header>
 </div>
