@@ -1,28 +1,26 @@
-== README
+= Welcome
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this application we use the concept called segmentation to obtain certain contacts from a list and predefined criteria.
 
-Things you may want to cover:
+== The following explains how to obtain and run the application locally.
 
-* Ruby version
+== Installing Ruby on Rails
+  To be able to execute the application we must have installed some Ruby on Rails version, 
+  they can be downloaded from any of the following links depending on your operating system:
+   Windows
+     https://railsinstaller.org/
+   Ubuntu
+     https://gorails.com/setup/ubuntu/16.04
+   Mac OSX
+     https://gorails.com/setup/osx/10.11-el-capitan
+  
+== Import the project
+  Clone or download the project locally.
 
-* System dependencies
+== Database creation
+  The application uses PostgreSQL as a database.
+  We can configure it from the following link
+  https://postgresapp.com
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Configuration and use
+  From the command line and positioned in the directory of the application, install the necessary dependencies with the command "bundle install". Create the database with the command "rake db: creat" and perform the migrations of the database with the command "rake db:migrate". Initialize the database with certain test values with the command "rake db: seed". Then if everything went okey should be able to run the local server with the command "rails s", it will indicate the access port, for example "http//localhost:3000/", enter this address in your browser and you could use the application.
