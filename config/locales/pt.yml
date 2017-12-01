@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 pt:
-  hello: "bem vinda"
+  hello: "Bem vinda"
   Segmentation: "Segmentação"
   Options: "Opções"
   Contacts: "Contatos"
